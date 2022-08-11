@@ -307,6 +307,9 @@ img {
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
+.icon-img {
+  width: 30px;
+}
 
 .skills__names {
   display: flex;
