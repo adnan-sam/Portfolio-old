@@ -376,6 +376,82 @@ img {
   padding: 0px 15px 20px 15px;
 }
 
+/* Achievements */
+.scene {
+  position: relative;
+  perspective: 1500px;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+}
+.carousel {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.carousel_cell {
+  position: absolute;
+  width: 80%;
+  padding: 2px;
+  height: 250px;
+  left: 10px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #000000;
+  border: 3px solid;
+  border-radius: 6px;
+  box-shadow: 20px 20px 50px grey;
+}
+
+.carousel_cell:nth-child(1) {
+  background-color: #fff;
+  transform: rotateY(0deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(2) {
+  background-color: #fff;
+  transform: rotateY(60deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(3) {
+  background-color: #fff;
+  transform: rotateY(120deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(4) {
+  background-color: #01DFD7;
+  transform: rotateY(180deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(5) {
+  background-color: #FE9A2E;
+  transform: rotateY(240deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(6) {
+  background-color: #A8F4A9;
+  transform: rotateY(300deg) translateZ(350px);
+}
+
+.bloc_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  gap: 300px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
 /* ===== CONTACT =====*/
 /* .contact__input {
   width: 100%;
