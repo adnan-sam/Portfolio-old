@@ -41,7 +41,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Adnan</span><br>Web Developer</h1>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Adnan</span><br><span class="auto-input"></span></h1>
 
                     <a href="https://drive.google.com/file/d/12_N8G5muDmo_Uk4llUix_68wZ7GkQHOG/view?usp=sharing" class="button button_resume">Resume</a>
                     <a href="#contact" class="button">Contact</a>
@@ -99,7 +99,7 @@
                                 <span class="skills__name">DATA STRUCTURES AND ALGORITHMS</span>
                             </div>
                             <div class="skills__bar skills__dsa">
-
+                                
                             </div>
                             <div>
                                 <span class="skills__percentage">90%</span>
@@ -311,5 +311,14 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-input", {
+                strings: ["Web Developer", "UI/UX Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+        </script>
     </body>
 </html>
