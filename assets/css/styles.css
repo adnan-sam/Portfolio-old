@@ -27,6 +27,31 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+/* Scroll to top */
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right:35px;
+  width: 50px;
+  height: 50px;
+  background: url(up-arrow.png);
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.scrollTop.active {
+  content-visibility: hidden;
+  bottom: 35px;
+  visibility: visible;
+  opacity: 1;
+}
 
 @media screen and (min-width: 968px) {
   :root {

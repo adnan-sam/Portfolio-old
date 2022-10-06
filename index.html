@@ -13,6 +13,8 @@
         <title>Adnan Sameer</title>
     </head>
     <body>
+        <!--===== SCROLL BAR =====-->
+        <div class="scrollTop" onclick="scrollToTop()"></div>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -308,6 +310,19 @@
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var scroll=document.querySelector('.scrollTop');
+                scroll.classList.toggle("active", window.scrollY>500);
+            })
+
+            function scrollToTop(){
+                window.scrollTo({
+                    top:0,
+                    behavior: 'smooth'
+                })
+            }
+        </script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
